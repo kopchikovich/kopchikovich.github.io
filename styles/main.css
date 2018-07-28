@@ -19,7 +19,7 @@ height 667px {
 ************/
 .app {
   width: 375px;
-  height: 600px;
+  height: 100vh;
   background: url(../img/main-background.jpg);
   background-size: cover;
   display: flex;
