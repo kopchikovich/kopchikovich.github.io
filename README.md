@@ -1,1 +1,1 @@
-# workoutdiary.github.io
+# Hello, this is minimal workout app.
