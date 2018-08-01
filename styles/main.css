@@ -1,3 +1,4 @@
+/*************** Main ***************/
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -5,20 +6,20 @@ body {
 a {
   text-decoration: none;
 }
-
+.app {
+  width: 375px;
+  height: 600px;
+}
 /************
 width: 375px
 height 667px {
   .app 600px
   footer 67px
-}
-************/
-.app {
-  width: 375px;
-  height: 600px;
-}
+}************/
 
 
+
+/*************** Main-page ***************/
 .app__main-page {
   width: 100%;
   height: 100%;
@@ -30,6 +31,27 @@ height 667px {
   align-items: center;
 }
 
+
+/*************** Training page ***************/
+.app__train-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.app__train-page h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.app__train-page ul li {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+/*************** Footer ***************/
 footer {
   box-sizing: border-box;
   width: 375px;
@@ -63,6 +85,8 @@ footer a i {
   background-color: #123;
 }
 
+
+/*************** Buttons ***************/
 .btn {
   display: block;
   padding: 10px 20px;
