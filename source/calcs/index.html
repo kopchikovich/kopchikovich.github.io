@@ -4,11 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Калькуляторы</title>
+  <title>My calcs <3</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
+  <div class="carousel">
+    <button class="carousel__btn carousel__btn--prev"><</button>
+    <div class="carousel__container">
+      <ul class="carousel__list">
+        <li class="carousel__item calc calc--deposit">
+          
+          <div class="calc--deposit__container">
+            <h2 class="calc--deposit__header">Calculator of deposit</h2>
+            <div class="calc--deposit__user-input">
+              <p class="calc--deposit__flex-row">
+                <span class="calc--deposit__item">Amount of deposit</span>
+                <input type="number" class="calc--deposit__input calc--deposit__input--deposit calc--deposit__item" min="1">
+              </p>
+              <p class="calc--deposit__flex-row">
+                <span class="calc--deposit__item">Percent</span>
+                <input type="number" class="calc--deposit__input calc--deposit__input--percent calc--deposit__item" min="0.5" max="100" step="0.5">
+              </p>
+              <label class="calc--deposit__flex-row"><input type="checkbox" name="capitalization" class="calc--deposit__capital calc--deposit__item" value="1">Interest capitalization (only for year)</label>
+              <button class="calc--deposit__button calc--deposit__item">Сalculate</button>
+            </div>
+            <div class="calc--deposit__user-output">
+              <p class="calc--deposit__flex-row">
+                <span class="calc--deposit__item">Day:</span>
+                <span class="calc--deposit__sum-day calc--deposit__item">0</span>
+              </p>
+              <p class="calc--deposit__flex-row">
+                <span class="calc--deposit__item">Month:</span>
+                <span class="calc--deposit__sum-month calc--deposit__item">0</span>
+              </p>
+              <p class="calc--deposit__flex-row">
+                <span class="calc--deposit__item">Year:</span>
+                <span class="calc--deposit__sum-year calc--deposit__item">0</span>
+              </p>
+            </div>
+          </div>
+
+        </li>
+        <li class="carousel__item">2</li>
+        <li class="carousel__item">3</li>
+      </ul>
+    </div>
+    <button class="carousel__btn carousel__btn--next">></button>
+  </div>
 
 
 
