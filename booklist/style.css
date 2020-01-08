@@ -1,0 +1,323 @@
+:root {
+    --main-bg-color: #333;
+    --main-color: #ddd;
+    --max-width: 1024px;
+}
+
+/**************************** common ****************************/
+body, header, main, p, h2, h3, button, article {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: circle;
+}
+button {
+    border: none;
+    background-color: transparent;
+    font: inherit;
+    color: inherit;
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+body {
+    background-color: var(--main-bg-color);
+}
+/**************************** app ****************************/
+.app {
+    width: 100%;
+    max-width: var(--max-width);
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 24px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/**************************** header ****************************/
+.header {
+    background-color: var(--main-bg-color);
+    opacity: 0.95;
+    color: var(--main-color);
+    width: 100%;
+    max-width: var(--max-width);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__button--list, input.header__search-input {
+    margin-right: auto;
+}
+button.header__button--edit {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.button--edit__icon {
+    display: block;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 26px;
+    left: 3px;
+}
+.button--edit__icon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8px;
+    display: block;
+    width: 15px;
+    height: 2px;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}
+.button--edit__icon:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 2px solid transparent;
+    border-right: 6px solid var(--main-color);
+}
+
+/**************************** input ****************************/
+.input {
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
+    height: 40px;
+    border: 1px solid var(--main-color);
+    font: inherit;
+    font-size: 26px;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+}
+
+/**************************** button ****************************/
+.button {
+    padding: 5px;
+}
+.button--percon-icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+.button--percon-icon::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}
+.button--percon-icon::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 9px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 10px solid var(--main-color);
+}
+.button--add {
+    font-size: 28px;
+    padding: 4px 5px;
+}
+.button--warning {
+    display: block;
+    margin: 0 auto;
+    color: #f55;
+    font-size: 22px;
+}
+
+/**************************** main ****************************/
+.main {
+    width: 100%;
+    margin-top: 60px;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+}
+
+/**************************** book ****************************/
+.book {
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.book__cover {
+    width: 200px;
+    height: auto;
+}
+.book__title, .book__author {
+    text-align: center;
+    font-size: 1.2em;
+}
+.book__text {
+    margin-top: 5px;
+}
+.book__text--left {
+    align-self: flex-start;
+    margin-left: 20px;
+}
+.book__text--line {
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999;
+}
+.book__date {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/**************************** controls ****************************/
+.controls {
+    width: 100%;
+    max-width: var(--max-width);
+    position: fixed;
+    top: 45vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls__button {
+    width: 30px;
+    height: 70px;
+    font-size: 26px;
+    opacity: 0.35;
+}
+.controls__button:active, .controls__button:hover {
+    opacity: 1;
+}
+.controls__button:disabled {
+    opacity: 0;
+}
+
+/**************************** booklist ****************************/
+.booklist {
+    text-align: left;
+    padding: 0 20px;
+}
+.booklist__book {
+    list-style-type: none;
+    margin-top: 10px;
+}
+.booklist__book button {
+    text-align: left;
+}
+
+/**************************** user ****************************/
+.user {
+    text-align: center;
+}
+.user__text {
+    margin-top: 10px;
+}
+.user__name {
+    font-size: 1.2em;
+    padding-top: 30px;
+}
+.user__switch-theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user__checkbox {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    margin-left: 25px;
+}
+.user__button-exit {
+    margin-top: 30px;
+}
+
+/**************************** login ****************************/
+.login {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    transition: 0.3s;
+}
+.login__input {
+    width: 300px;
+    font-size: 24px;
+}
+.login__submit {
+    opacity: 0.8;
+    padding: 5px 10px;
+}
+/******** shake ********/
+.shake {
+    margin-right: 50px;
+}
+
+/**************************** add book form ****************************/
+.add-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.add-form__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-top: 10px;
+}
+.add-form__input {
+    width: 300px;
+    font-size: 22px;
+}
+.add-form__input--date {
+    width: 230px;
+}
+.add-form__input--file {
+    width: 240px;
+    margin: 5px;
+}
+.add-form__input--small-text {
+    font-size: 18px;
+}
+.add-form__textarea {
+    min-width: 300px;
+    min-height: 150px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid var(--main-color);
+    font: inherit;
+    font-size: 16px;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+}
+.add-form__submit {
+    margin: 30px 0; 
+}
