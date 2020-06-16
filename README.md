@@ -7,4 +7,4 @@
 
 ### Simple JavaScript calculator [codepen.io](https://codepen.io/kopchikovich/full/RwNOYKX)
 
-### Pomodoro clock [codepen.io](https://codepen.io/kopchikovich/full/MWwGgXp)
+### Pomodoro Clock (Google Chrome Extension) [chrome store](https://chrome.google.com/webstore/detail/pomodoro-clock/pfbgmmjloigajfgnfmgmdbafaedpmlml)
