@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='../style.css'>
+  <title>Калькулятор доходновсти карты 100 дней без %</title>
+</head>
+<body>
+
+  <section class='calc'>
+
+    <header class='header'>
+      Калькулятор доходности карты "100 дней без %"
+    </header>
+    <p class='text-block'>
+      Калькулятор считает, что дата отсчёта (и первого снятия) начинается с первого дня месяца. Обслуживание карты в год 1490 руб.
+    </p>
+
+    <form class='input-data' id='form'>
+      <label class='input-container'>
+        <span class='input-container__text'>
+          Кредитный лимит
+        </span>
+        <input class='input-container__input' type='number' value='200000' id='cardLimit'>
+      </label>
+      <label class='input-container'>
+        <span class='input-container__text'>
+          Ожидаемая доходность (% годовых)
+        </span>
+        <input class='input-container__input' type='number' value='6' id='percent'>
+      </label>
+      <button class='submit'>Рассчитать</button>
+    </form>
+
+    <div class='output-data'>
+      <p class='text-block'>
+        Примерный доход
+      </p>
+      <p class='output-text'>
+        <span class='output-text__title'>За 100 дневный цикл</span>
+        <span class='output-text__value' id='income100days'>0</span>
+      </p>
+      <p class='output-text'>
+        <span class='output-text__title'>За день</span>
+        <span class='output-text__value' id='incomeDay'>0</span>
+      </p>
+      <p class='output-text'>
+        <span class='output-text__title'>За месяц</span>
+        <span class='output-text__value' id='incomeMonth'>0</span>
+      </p>
+      <p class='output-text'>
+        <span class='output-text__title'>За год</span>
+        <span class='output-text__value' id='incomeYear'>0</span>
+      </p>
+      <p class='output-text'>
+        <span class='output-text__title'>Год минус обслуживание</span>
+        <span class='output-text__value' id='incomeWithService'>0</span>
+      </p>
+    </div>
+
+  </section>
+
+  <script src='calc.js'></script>
+</body>
+</html>
