@@ -4,7 +4,7 @@
 
 ### Workout PWA [demo](https://my-awesome-workout-diary.web.app/) [code](https://github.com/kopchikovich/workout)
 
-### Pomodoro Clock (Google Chrome Extension) [chrome store](https://chrome.google.com/webstore/detail/pomodoro-clock/pfbgmmjloigajfgnfmgmdbafaedpmlml)
+### Pomodoro Clock (Google Chrome Extension) [chrome store](https://chrome.google.com/webstore/detail/pomodoro-clock/pfbgmmjloigajfgnfmgmdbafaedpmlml) [code](https://github.com/kopchikovich/pomodoro-chrome-extension)
 
 ### Booklist [demo](https://kopchikovich.github.io/booklist/) [code](https://github.com/kopchikovich/booklist)
 
